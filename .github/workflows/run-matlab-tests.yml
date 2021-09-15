@@ -12,7 +12,7 @@ jobs:
       - name: Run tests
         uses: matlab-actions/run-command@v1
         with:
-          command: Tests/runAllMyTests.m
+          command: addpath('./Tests/'), runAllMyTests
       - name: Run tests and generate artifacts
         uses: matlab-actions/run-tests@v1
         with:
